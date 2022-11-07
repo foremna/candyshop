@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 import GoBack from "../../ui/GoBack";
+import Loading from "../../ui/Loading";
 
 const GoodPage = ({ api, goodId }) => {
   const [currentGood, setCurrentGood] = useState(false);
@@ -62,7 +64,7 @@ const GoodPage = ({ api, goodId }) => {
           </div>
         </>
       ) : (
-        "Loading"
+        <Loading />
       )}
     </>
   );
