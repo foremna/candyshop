@@ -5,6 +5,7 @@
 @import './RadioFields.css';
 @import './Greeting.css';
 @import './Good.css';
+@import './GoodPage.css';
 
 body {
   margin: 0;

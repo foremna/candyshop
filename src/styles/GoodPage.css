@@ -1,0 +1,41 @@
+.current-good {
+  display: flex;
+  justify-content: center;
+}
+
+.current-good__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 15px 0 0;
+  box-shadow: 0px 5px 20px #e3e3e3;
+}
+
+.current-good__image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.current-good__title {
+  font-weight: bold;
+  color: var(--green);
+}
+
+.current-good__price {
+  position: relative;
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--violet);
+}
+
+.current-good__price span {
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+  color: var(--black);
+}
+
+.current-good__category {
+  color: var(--gray-light);
+}
