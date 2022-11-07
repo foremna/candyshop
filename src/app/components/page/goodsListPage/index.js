@@ -1,2 +1,2 @@
-import GoodsListPage from "./GoodsListPage";
+import GoodsListPage from './GoodsListPage'
 export default GoodsListPage
