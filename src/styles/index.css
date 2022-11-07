@@ -100,3 +100,50 @@ a {
 .inputs-wrapper.inputs-wrapper--row {
   flex-direction: row;
 }
+
+.headline-form {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.wrapper-center {
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.text-and-link {
+  display: flex;
+  align-items: center;
+}
+
+.text-and-link p {
+  margin: 0;
+  margin-right: 10px;
+  color: var(--gray);
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-control:focus+ .input-container__label {
+  padding: 0 3px;
+  background-color: #fff;
+  border-radius: 3px;
+  top: 0px;
+  font-size: 10px;
+}
+
+.input-container__label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 14px;
+  color: var(--gray-light);
+  transition: .3s ease top, .6s ease font-size;
+  transform: translateY(-50%);
+  z-index: 1;
+}
