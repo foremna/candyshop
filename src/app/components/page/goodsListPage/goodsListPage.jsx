@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 import { RadioFields } from "../../common/form";
+
 import Good from "../../ui/Good";
+import Loading from "../../ui/L3oading";
 
 import _ from "lodash";
 
@@ -97,7 +99,7 @@ const GoodsListPage = ({ api, goods }) => {
           </div>
         </div>
       ) : (
-        "Loading"
+        <Loading />
       )}
     </>
   );
