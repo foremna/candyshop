@@ -1,6 +1,7 @@
 @import './variables.css';
 @import './Header.css';
 @import './Navbar.css';
+@import './Greeting.css';
 
 body {
   margin: 0;

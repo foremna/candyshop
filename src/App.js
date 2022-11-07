@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Header from './app/components/ui/Header';
+import Greeting from './app/components/ui/Greeting';
 
 import Sweets from './app/layouts/Sweets'
 import Login from './app/layouts/Login';
@@ -9,6 +10,7 @@ import Cart from './app/layouts/Cart';
 
 function App() {
   return (<>
+    <Greeting />
     <div className="container">
       <Header />
       <Switch>
