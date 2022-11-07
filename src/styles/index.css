@@ -3,9 +3,11 @@
 @import './Navbar.css';
 @import './Buttons.css';
 @import './RadioFields.css';
+@import './Counter.css';
 @import './Greeting.css';
 @import './Good.css';
 @import './GoodPage.css';
+@import './Cart.css';
 
 body {
   margin: 0;
@@ -29,6 +31,34 @@ a {
 
 .inner {
   padding-top: 50px;
+}
+
+.headline {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+  color: var(--violet);
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: -4px 5px 0px var(--yellow);
+}
+
+.headline.headline--center {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.headline::after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: -70px;
+  bottom: 0;
+  width: 112px;
+  height: 31px;
+  background-image: url('../assets/images/icon/icon-wave-large.png');
+  z-index: -1;
 }
 
 .link {
