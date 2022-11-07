@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { RadioFields } from "../../common/form";
 
 import Good from "../../ui/Good";
-import Loading from "../../ui/L3oading";
+import Loading from "../../ui/Loading";
 
 import _ from "lodash";
 
