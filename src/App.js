@@ -4,9 +4,11 @@ import { Switch, Route } from 'react-router-dom';
 import Sweets from './app/layouts/Sweets'
 import Login from './app/layouts/Login';
 import Cart from './app/layouts/Cart';
+import Header from './app/components/ui/Header';
 
 function App() {
   return (<>
+    <Header />
     <div className="container">
       <Switch>
         <Route path='/goods/:goodId?' render={(props) => (<Sweets {...props} />)} />
