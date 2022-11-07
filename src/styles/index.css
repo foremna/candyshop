@@ -2,6 +2,7 @@
 @import './Header.css';
 @import './Navbar.css';
 @import './Buttons.css';
+@import './RadioFields.css';
 @import './Greeting.css';
 @import './Good.css';
 
@@ -56,4 +57,15 @@ a {
 
 .link--btn:focus {
   box-shadow: 0 0 0 0.25rem var(--green-middle);
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.inputs-wrapper.inputs-wrapper--row {
+  flex-direction: row;
 }

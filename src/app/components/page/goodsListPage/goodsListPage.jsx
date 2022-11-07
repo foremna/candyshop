@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
+import { RadioFields } from "../../common/form";
 import Good from "../../ui/Good";
 
 import _ from "lodash";
 
-const GoodsListPage = ({ goods }) => {
+const GoodsListPage = ({ api, goods }) => {
+  const [category, setCategories] = useState(false);
   const [filter, setFilter] = useState();
   const [search, setSearch] = useState("");
   const [sortByPrice, setSortByPrice] = useState({
@@ -12,9 +14,18 @@ const GoodsListPage = ({ goods }) => {
     order: "asc",
   });
 
+  useEffect(() => {
+    api.tastes.fetchAll().then((data) => setCategories(data));
+  }, []);
+
   const handleChange = ({ target }) => {
     setSearch(target.value);
     setFilter("");
+  };
+
+  const handleCategories = ({ target }) => {
+    setSearch("");
+    setFilter(target.value);
   };
 
   const handleSortByPrice = () => {
@@ -22,6 +33,10 @@ const GoodsListPage = ({ goods }) => {
       ...sortByPrice,
       order: sortByPrice.order === "asc" ? "desc" : "asc",
     });
+  };
+
+  const clearFiltered = () => {
+    setFilter();
   };
 
   const filteredGoods = filter
@@ -43,6 +58,19 @@ const GoodsListPage = ({ goods }) => {
       {goods ? (
         <div className="row justify-content-center">
           <div className="cards col-8">
+            {category ? (
+              <div className="inputs-wrapper inputs-wrapper--row">
+                <RadioFields
+                  options={category}
+                  name="tastes"
+                  value={filter}
+                  onChange={handleCategories}
+                />
+                <button className="btn btn-link btn-sm" onClick={clearFiltered}>
+                  Show all
+                </button>
+              </div>
+            ) : null}
             <div className="input-group flex-nowrap mb-2">
               <span className="input-group-text">
                 <i className="bi bi-search"></i>
