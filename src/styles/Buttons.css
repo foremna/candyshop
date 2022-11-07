@@ -1,0 +1,49 @@
+.btn-wrapper {
+  display: flex;
+}
+
+.btn-wrapper--center {
+  justify-content: center;
+}
+
+.btn-wrapper--full-btn .btn {
+  width: 100%;
+}
+
+.btn.btn-primary {
+  background-color: var(--violet);
+  border-color: var(--violet);
+  color: var(--yellow);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--violet-dark);
+}
+
+.btn.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem var(--violet-light);
+}
+
+.btn-link {
+  color: var(--violet);
+}
+
+.btn-link:hover {
+  font-weight: bold;
+  color: var(--violet);
+}
+
+.btn-yellow {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--yellow);
+  border-radius: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: .3s ease background;
+}
+
+.btn-yellow:hover {
+  background-color: var(--spring-green);
+}

@@ -1,0 +1,50 @@
+.card__item {
+  margin-bottom: 30px;
+}
+
+.card__content {
+  position: relative;
+}
+
+.card__image {
+  box-shadow: 0 5px 8px 0 #e8e8e8;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 10px;
+  box-shadow: 0 5px 8px 0 #e8e8e8;
+}
+
+.card__title {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 25px;
+  transition: .3s ease color;
+}
+
+.card__title:hover {
+  color: var(--green);
+}
+
+.card__price {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  margin: 0;
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--violet);
+}
+
+.card__price span {
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+  color: var(--black);
+}

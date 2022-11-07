@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+import GoodsListPage from "../components/page/goodsListPage";
+
+import api from "../api";
 
 const Sweets = () => {
-  return <h1>Sweets</h1>;
+  const [goods, setGoods] = useState();
+
+  useEffect(() => {
+    api.goods.fetchAll().then((data) => setGoods(data));
+  }, []);
+
+  return <>{goods && <GoodsListPage api={api} goods={goods} />}</>;
 };
 
 export default Sweets;

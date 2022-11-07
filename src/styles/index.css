@@ -1,7 +1,9 @@
 @import './variables.css';
 @import './Header.css';
 @import './Navbar.css';
+@import './Buttons.css';
 @import './Greeting.css';
+@import './Good.css';
 
 body {
   margin: 0;
