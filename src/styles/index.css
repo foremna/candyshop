@@ -9,6 +9,7 @@
 @import './Good.css';
 @import './GoodPage.css';
 @import './Cart.css';
+@import './NotFound.css';
 
 body {
   margin: 0;

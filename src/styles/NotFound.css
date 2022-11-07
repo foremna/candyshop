@@ -1,0 +1,7 @@
+.not-found__title {
+  margin: 0;
+  font-size: 200px;
+  font-weight: bold;
+  color: var(--violet);
+  text-shadow: -16px 0px 0px var(--yellow);
+}
