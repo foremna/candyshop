@@ -1,2 +1,3 @@
+import TextField from "./TextField";
 import RadioFields from "./RadioField";
-export { RadioFields };
+export { TextField, RadioFields };
